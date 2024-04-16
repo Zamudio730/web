@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.logo {
+    background-color: black; /* Cor de fundo da logo */
+    padding: 30px; /* Espaçamento interno da logo */
+    margin-bottom: 20px; /* Margem inferior da logo */
+	display: flex;
+	font-size: 20px;
+    cursor: pointer;
+    font-family: Tahoma;
+    color: white;
+}
+.Rent {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remover sublinhado dos links */
+    font-weight: bold; /* Deixar a fonte em negrito */
+    /* Adicione outros estilos conforme necessário */
+}
+.content {
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Cor do texto do parágrafo */
+}
+.content {
+    margin-bottom: 30px;
+    padding: 20px; /* Adiciona um preenchimento de 20px em todos os lados */
+}
+
+.content h2 {
+    font-size: 24px;
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666; /* Cor do texto do parágrafo */
+}

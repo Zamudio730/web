@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 190vh;
+    width: 100vw;
+    background-image: url(/img/group-5.png);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-position-y: 230px;
+    background-position-x: -65px;
+    background-attachment: fixed;
+}
+
+header{
+    position: fixed;
+    display: flex;
+	width: 100vw;
+	height: 13vh;
+    background-color: black;
+}
+
+img{
+    margin: 2px;
+	width: 120px;
+}
+
+form{
+    display: flex;
+    height: 190vh;
+    width: 100%;
+}
+
+.container{
+    margin-left: 610px;
+    margin-top: 18vh;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    height: 160vh;
+    width: 50%;
+    margin-bottom: 20vh;
+    -webkit-box-shadow: -7px 7px 171px 7px rgb(0, 0, 0);
+    -moz-box-shadow: -7px 7px 171px 7px rgb(14, 16, 16);
+    box-shadow: -7px 7px 171px 7px rgb(11, 11, 11);
+}
+
+.menus{
+	width: 40vw;
+	text-transform: uppercase;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 9pt;
+}
+
+.lista-de-itens{
+	display: flex;
+	gap: 20px;
+	list-style: none;
+
+}
+
+.lista-de-itens a{
+	position: relative;
+	color: #ffffff;
+	text-decoration: none;
+	font-style: none;
+    
+
+}
+
+.lista-de-itens a:before{
+	content:'';
+	position: absolute;
+	bottom: -3px;
+	left: 0px;
+	width: 0px;
+	height: 1px;
+	background-color: white;
+	transition: all 0.9s ease;
+}
+
+.lista-de-itens a:hover:before{
+	width: 100%;
+}
+
+
+#conteudo-principal{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titulo{
+    text-transform: uppercase;
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+}
+
+.dados-cadastrais{
+    position: relative;
+    display: flex;
+    padding: 2px;
+    margin-top: 87px;
+    flex-direction: column;
+}
+
+label{
+    margin-left: 40px;
+    justify-content: center;
+}
+
+input{
+    position: absolute;
+    width: 50%;
+    margin-left: 30px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 2px #000000 solid;
+    background-color: transparent;
+    padding: 0 15px;
+    color:#000000;
+    text-transform: uppercase;
+}
+
+.nome{
+    color: #000000;
+    position: absolute;
+    margin-top: -25px;
+    transition: 0.5s;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    left: -4%;
+}
+
+#pn:valid ~ .nome,
+#pn:focus ~ .nome{
+    transform: translateX(20px);
+    transform: translateY(-21px);
+}
+
+#pn{
+    margin-top: -20px;
+}
+
+
+.cadastro-de-pessoa-fisica{
+    color: #000000;
+    position: absolute;
+    margin-top: -25px;
+    transition: 0.5s;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    left: -4%;
+}
+
+#cpf:valid ~ .cadastro-de-pessoa-fisica,
+#cpf:focus ~ .cadastro-de-pessoa-fisica{
+    transform: translateX(20px);
+    transform: translateY(-21px);
+}
+
+#cpf{
+    margin-top: -20px;
+}
+
+.telefone{
+    color: #000000;;
+    position: absolute;
+    margin-top: -25px;
+    transition: 0.5s;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    left: -4%;
+}
+
+#tel:valid ~ .telefone,
+#tel:focus ~ .telefone{
+    transform: translateX(20px);
+    transform: translateY(-21px);
+}
+
+#tel{
+    margin-top: -20px;
+}
+
+
+.email{
+    color: #000000;
+    position: absolute;
+    margin-top: -25px;
+    transition: 0.5s;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    left: -4%;
+}
+
+#email:valid ~ .email,
+#email:focus ~ .email{
+    transform: translateX(20px);
+    transform: translateY(-21px);
+}
+
+#email{
+    margin-top: -20px;
+}
+
+.senha{
+    color: #000000;
+    position: absolute;
+    margin-top: -25px;
+    transition: 0.5s;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    left: -4%;
+}
+
+#password:valid ~ .senha,
+#password:focus ~ .senha{
+    transform: translateX(20px);
+    transform: translateY(-21px);
+}
+
+#password{
+    margin-top: -20px;
+}
+
+.csenha{
+    color: #000000;
+    position: absolute;
+    margin-top: -25px;
+    transition: 0.5s;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    left: -4%;
+}
+
+#confirmpassword:valid ~ .csenha,
+#confirmpassword:focus ~ .csenha{
+    transform: translateX(20px);
+    transform: translateY(-21px);
+}
+
+#confirmpassword{
+    margin-top: -20px;
+}
+
+.input-genero{
+    display: flex;
+    margin-top: 25px;
+    flex-direction: column;
+}
+
+.input-genero label{
+    color: #000000;
+    margin-left: 40px;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 9pt;
+}
+
+.input-genero input{
+    height: 2.5vh;
+    margin-right: 110px;
+}
+
+#f{
+    margin-top: -14px;
+}
+
+#m{
+    margin-top: -14px;
+}
+
+#o{
+    margin-top: -14px;
+}
+
+#pnd{
+    margin-top: -14px;
+}
+
+.botao{
+    margin-top: 85px;
+    display: flex;
+    text-align: column;
+    justify-content: center;
+}
+
+.button{
+    border: 1.5px solid #000000;
+    height: 40px;
+    width: 400px;
+    border-radius: 13px;
+    cursor: pointer;
+    background-color: cyan;
+    color: #000000;
+}
+
+footer{
+    margin-bottom: 10vh;
+}
+
+#input-file{
+    margin-top: -60px;
+}
+
+.inputfilelabel{
+    color: #000000;
+    position: absolute;
+    margin-top: -100px;
+    transition: 0.5s;
+    padding: 0 25px;
+    transition: 0.2s ease;
+    left: -4%;
+}
+.Rent{
+    width: 180px;
+    cursor: pointer;
+    display: flex;
+    margin-left: 50px;
+    font-family: Tahoma;
+    font-size: 30px;
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+}
